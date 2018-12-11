@@ -1,0 +1,41 @@
+.facts {
+    margin-top:75px;
+    border-top:1px solid gray;
+    padding:75px 0;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    text-align: center;
+}
+.fact {
+    width: calc(33% - calc(34px / 2));
+    margin-bottom:50px;
+    display: flex;
+    flex-direction:column;
+    &-content {
+        width: 90%;
+        margin:0 auto;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        flex-grow: 1;
+    }
+    .bt {
+        margin-top:auto;
+    }
+}
+.map {
+    display: flex;
+    &>* {
+        width: 50%;
+    }
+}
+.countries {
+    columns: 2;
+    &__link {
+        text-decoration: none;
+        color:#333;
+        display: inline-block;
+        margin-bottom:20px;
+    }
+}
